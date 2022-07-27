@@ -48,9 +48,10 @@ function firstVowelIndex(thisWord) {
     let wordArray = thisWord.split("");
     for (let i = 0; wordArray.length; i++) {
         if (wordIsVowel(wordArray[i])) {
-            return 1;
+            return i
         }
-    } return wordArray.length;
+    } 
+    return wordArray.length;
 }
 
 
@@ -60,16 +61,16 @@ function firstVowelIndex(thisWord) {
 // First writing the algorithm for our application then we move to defining each function one by one
 // Our Algorithm
 
-function pigLatin(checkVowelWords) {
-    if (wordsStartingWithAVowel(checkVowelWords)) {
-        return checkVowelWords.concat("way");
+function pigLatin(thisWord) {
+    if (wordsStartingWithAVowel(thisWord)) {
+        return thisWord.concat("way");
     } else if (wordsStartingWithQu(thisWord)) {
         return thisWord.slice(2).concat("quay");
     }
     else {
-        let firstVowelIndex = firstVowelIndex(thisWord);
-        let consonantPart = thisWord.slice(0, firstVowelIndex);
-        let remainingPart = thisWord.slice(wordIsVowel);
+        let firstVowel_Index = firstVowelIndex(thisWord);
+        let consonantPart = thisWord.slice(0, firstVowel_Index);
+        let remainingPart = thisWord.slice(firstVowel_Index);
         return remainingPart.concat(consonantPart, "ay");
     }
 
@@ -92,5 +93,11 @@ function pigLatinWholeText(text) {
 // THe UI Logic
 
 $(document).ready( function(){
-    
+    $("#form").submit( function(event){
+        event.preventDefault();
+        const text = $("#languagePassage").val();
+        const output = pigLatinWholeText(text);
+        $("#output").html(output);
+
+    });
 });
