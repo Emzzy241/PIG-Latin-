@@ -134,26 +134,89 @@ A TEST HAS BEEN WRITTEN TO PASS THIS SPEC AND IT HAS BEEN PASSED, MOVING ON TO T
 
 -->
 
-
-<!-- THE NEXT SPEC: THE THIRD FUNCTION TO CHECK IF FIRST TWO WORDS ARE VOWEL
+ 
+<!--  I DIDN'T USE THIS AGAIN....THE NEXT SPEC: THE THIRD FUNCTION TO CHECK IF FIRST TWO WORDS ARE VOWEL
     I have already determined if a first word is vowel and it has been used in my algorithm in scripts.js
-    what if I want to determine if the first 2 letters in a word are vowels... I HAVE TO CREATE A NEW FUNCTION AND TEST FOR IT... I first created in my vowel array's variable, then I stored the splitted form of my word as an array also and then I used forLoop,  and lastly a conditional
+    what if I want to determine if the first 2 letters in a word are vowels... I HAVE TO CREATE A NEW FUNCTION AND TEST FOR IT... I first created in my vowel array's variable, then I stored the splitted form of my word as an array also and then I used forLoop,  and lastly a conditional.. this is a powerful function so I would be needing another function in it
 
         function firstTwoWordsStartingWithAVowel(thisWord){
-            let vowels = ["a", "e", "i", "o", "u"];
+            
             let thisWordArray = thisWord.split("");
             for (let i = 0; i < thisWordArray.length; i++){
-                if(vowels(thisWordArray[i])){
+                if(isVowel(thisWordArray[i])){
                     return true;
                 }
             } return false;
-        } return thisWordArray.length;
+
+            
+
         }
 
 
 
+THE FOURTH FUNCTION
+
+            function isVowel(letter){
+                let vowels = ["a", "e", "i", "o", "u"];
+                for( let i = 0; i < vowels.length; i++){
+                    if( letter === vowels[i]){
+                        return true;
+                    }
+                }
+                return false;
+            }
+        } return thisWordArray.length;
+
 
  -->
+
+
+<!-- THE NEXT SPEC: THE THIRD FUNCTION IS TO CHECK FOR VOWELS, SO WE ARE
+
+    function wordIsVowel(letter){
+        let vowels = ["a", "e", "i", "o", "u"];
+        for( let i = 0; i < vowels.length; i++){
+            if( letter === vowels[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    THIS ONE AND THE NEXT FUNCTION BOTH WORK IN HANDY BECAUSE WE'RE CALLING IT HERE
+
+
+
+ -->
+
+ <!-- THE FOURTH FUNCTION IS TO CHECK IF THE CHARACTER INDEX OF A WORD IS A VOWEL
+
+    function firstVowelIndex(thisWord){
+        let wordArray = thisWord.split("");
+        for ( let i = 0; wordArray.length; i++){
+            if(wordIsVowel(wordArray[i])){
+                return 1;
+            } 
+        } return wordArray.length;
+    }
+
+  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,13 +311,24 @@ Expected Output: true;
 
 <!-- 
 
- THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST -->
+ THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST.. WE ARE GOING TO TEST AGAIN ONLY IF A WORDS FIRST TEXT IS VOWEL AND ALSO TEST FOR THE VOWEL INDEX TOO LATER MAYBE IN THE FIFTH TEST...we are doing this test just because of our consonant words, rather than writing bcdf-z   -->
 
- <!-- 
-  FOURTH TEST: CHECKING IF A PARTICULAR WORD STARTS WITH A VOWEL -->
 
- Describe: firstTwoWordsStartingWithAVowel()
+ Describe: wordIsVowel()
 
- Test: "It will check if a particular word starts with two vowel letters"
- Code: wordsStartingWithAVowel("aavid");
+ Test: "It will check if a particular character is a vowel"
+ Code: wordsStartingWithAVowel("a");
  Expected Output: true
+
+
+<!-- THIS TEST HAS BEEN PASSED DO NOTE THAT THIS TEST IS A CHARACTER ONLY TEST... NEXT TEST WOULD NOW BE TO TEST FOR THE INDEX POSITION WE WILL BE CHECKING IF THE FIRST INDEX IS VOWEL... DO NOTE THAT THE PREVIOUS FUNCTION AND THIS FUNCTION BOTH WORK TOGETHER BECAUSE WE WILL BE CALLING IT HERE
+ -->
+
+ 
+ Describe: firstWordIsVowel()
+
+ Test: "It will check if a particular character's is a vowel"
+ Code: wordsStartingWithAVowel("a");
+ Expected Output: true
+
+ <!-- A TEST HAS BEEN WRITTEN FOR THIS AND IT HAS BEEN PASSED UP NEXT IS A NEW TEST FOR A NEW FUNCTION -->
