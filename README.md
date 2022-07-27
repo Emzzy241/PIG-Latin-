@@ -325,9 +325,9 @@ Expected Output: true;
  -->
 
  
- Describe: firstWordIsVowel()
+ Describe: firstVowelIndex(thisWord)
 
- Test: "It will check if a particular character's is a vowel"
+ Test: "It will check if a particular character's index is a vowel"
  Code: wordsStartingWithAVowel("a");
  Expected Output: true
 

@@ -12,7 +12,9 @@ function pigLatin(checkVowelWords){
         return thisWord.slice(2).concat("quay");
     }
     else{
-        let 
+        let firstVowelIndex = firstVowelIndex(thisWord);
+        let consonantPart = thisWord.slice(0, firstVowelIndex);
+        let remainingPart = thisWord.slice(consonantPart, )
     }
 
 }
@@ -44,5 +46,27 @@ function wordsStartingWithQu(thisWord){
     }
 }
 
-// The third function: a function that determines whether the first
-// 2 letters of a word starts with vowel
+// The remaining part is just to do what our consonant is telling us to do
+// The third function: a function that determines if the first word is a vowel
+
+function wordIsVowel(letter){
+    let vowels = ["a", "e", "i", "o", "u"];
+    for( let i = 0; i < vowels.length; i++){
+        if( letter === vowels[i]){
+            return true;
+        }
+    }
+    return false;
+}
+
+// and the fourth function to determine if the first index of the first word is a vowel
+
+function firstVowelIndex(thisWord){
+    let wordArray = thisWord.split("");
+    for ( let i = 0; wordArray.length; i++){
+        if(wordIsVowel(wordArray[i])){
+            return 1;
+        } 
+    } return wordArray.length;
+}
+
