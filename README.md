@@ -102,7 +102,13 @@ NOW OUR FUNCTION IS GOOD TO GO AND WILL WORK WHETHER OR NOT IF USER ENTERS A CAP
  No forLoop is needed here because this is a simple function that can be executed with a conditional and with a new method called .slice()... this slices out the characters you want and you can now choose to store them back in the variable.... So back to the next spec, to solve this now I will create a function: wordsStartingWithQu... I will first create a variable for storing the sliced value of the words enterred and then I use a conditional... Here is the code
 
     function wordsStartingWithQu(thisWord){
-
+        let storingSlicedValue = thisWord.slice(0, 2);
+        if( storingSlicedValue === "qu"){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
 
@@ -189,3 +195,18 @@ Expected Output: 7
 
  <!--  
  THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST  -->
+
+ <!-- THIRD TEST: TO CHECK FOR WORDS STARTING WITH "qu"  -->
+
+Describe: wordsStartingWithQu()
+Test: "It will check if a particular word starts with "qu" "
+Code: wordsStartingWithQu("quick");
+Expected Output: true
+
+
+ <!--  
+ THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST TO CHECK FOR CAPITALIZATION TOO -->
+
+ Test: "It will check if a particular word starts with "qu" irrespective of ca"
+Code: wordsStartingWithQu("quick");
+Expected Output: true
