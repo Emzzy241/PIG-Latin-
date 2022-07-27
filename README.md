@@ -99,7 +99,7 @@ NOW OUR FUNCTION IS GOOD TO GO AND WILL WORK WHETHER OR NOT IF USER ENTERS A CAP
 
  <!-- THE NEXT SPEC 
  3. Still following my algorithm, the next should be writing a function for words starting with qu
- No forLoop is needed here because this is a simple function that can be executed with a conditional and with a new method called .slice()... this slices out the characters you want and you can now choose to store them back in the variable.... So back to the next spec, to solve this now I will create a function: wordsStartingWithQu... I will first create a variable for storing the sliced value of the words enterred and then I use a conditional... Here is the code
+ No forLoop is needed here because this is a simple function that can be executed with a conditional and with a new method called .slice()... this slices out the characters you want and you can now choose to store them back in the variable.... So back to the next spec, to solve this now I will create a function: wordsStartingWithQu... I will first create a variable for storing the sliced value of the words enterred and then I use a conditional... Here is the CODE:
 
     function wordsStartingWithQu(thisWord){
         let storingSlicedValue = thisWord.slice(0, 2);
@@ -112,10 +112,25 @@ NOW OUR FUNCTION IS GOOD TO GO AND WILL WORK WHETHER OR NOT IF USER ENTERS A CAP
     }
 
 
- 
+A TEST HAS BEEN WRITTEN TO PASS THIS SPEC, MOVING ON TO THE NEXT SPEC FOR CAPITALIZATION 
  -->
 
+<!-- NEXT SPEC
+4. I have done a test that checks if a word starts with "qu" but I haven't taking instances for capitalization and that could be a great mistake in my code... To prevent that now I update my previous function and add in the method .toLowerCase(), so whether the user inputs the qu word with capital letters or not, my function still sees it as just "qu"
+CODE:
 
+    function wordsStartingWithQu(thisWord){
+        let storingSlicedValue = thisWord.slice(0, 2);
+        if( storingSlicedValue.toLowerCase() === "qu"){
+            return true;
+        }
+        else{
+            return false
+        }
+    }
+
+
+-->
 
 
 
@@ -207,6 +222,10 @@ Expected Output: true
  <!--  
  THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST TO CHECK FOR CAPITALIZATION TOO -->
 
- Test: "It will check if a particular word starts with "qu" irrespective of ca"
-Code: wordsStartingWithQu("quick");
-Expected Output: true
+ Test: "It will check if a particular word starts with "qu" irrespective of capitalization"
+Code: wordsStartingWithQu("QUick");
+Expected Output: true;
+
+<!-- 
+
+ THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST -->

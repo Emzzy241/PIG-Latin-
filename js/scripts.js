@@ -13,7 +13,7 @@ function pigLatin(checkVowelWords){
 }
 
 
-// The function for words starting with a vowel
+// The function for words starting with a vowel irrespective of capitalization
 function wordsStartingWithAVowel(checkVowelWords){
     let vowels = ["a", "e", "i", "o", "u"];
 
