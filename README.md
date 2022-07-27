@@ -72,6 +72,44 @@ NOTE: THE TEST FOR THIS IS DOWN BELOW
  -->
 
 
+<!-- THE NEXT SPEC
+2. Yes we have written a nice function that checks if the first letter of our word is a vowel, but when we enter 
+uppercase letters, this test fails woefully, so to prevent this now we need to take in vowels whether they're capitalized
+or not... To do this we are just going to update our previous function
+CODE:
+        function wordsStartingWithAVowel(checkVowelWords){
+        let vowels = ["a", "e", "i", "o", "u"];
+
+        for(let i = 0; i < vowels.length; i++){
+            if(checkVowelWords.charAt(0).toLowerCase() === vowels[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+So all we had to just do here was to put in the .toLowerCase() method and it completely worked
+NOW OUR FUNCTION IS GOOD TO GO AND WILL WORK WHETHER OR NOT IF USER ENTERS A CAPITAL LETTER FIRST OR A SMALL LETTER FIRST
+ -->
+
+
+
+
+
+
+ <!-- THE NEXT SPEC 
+ 3. Still following my algorithm, the next should be writing a function for words starting with qu
+ No forLoop is needed here because this is a simple function that can be executed with a conditional and with a new method called .slice()... this slices out the characters you want and you can now choose to store them back in the variable.... So back to the next spec, to solve this now I will create a function: wordsStartingWithQu... I will first create a variable for storing the sliced value of the words enterred and then I use a conditional... Here is the code
+
+    function wordsStartingWithQu(thisWord){
+
+    }
+
+
+ 
+ -->
+
+
 
 
 
@@ -129,16 +167,25 @@ Expected Output: 7
 
 
  <!-- Starting the Test: the first Test I feel is the simplest to start with -->
-
- <!-- FIRST TEST: CHECKING IF A PARTICULAR WORD STARTS WITH A VOWEL
+<!-- 
+  FIRST TEST: CHECKING IF A PARTICULAR WORD STARTS WITH A VOWEL -->
 
  Describe: wordsStartingWithAVowel()
 
  Test: "It will check if a particular word starts with a vowel"
  Code: wordsStartingWithAVowel("david");
  Expected Output: false
- 
- THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST 
-  -->
+<!--  
+ THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST  -->
 
-  <!-- SECOND TEST:  -->
+
+  <!-- SECOND TEST: TO ALSO MAKE SURE WE TAKE IN VOWELS IREESPECTIVE OF WHETHER IT IS A CAPITAL LETTER OR A SMALL LETTER
+   -->
+
+   
+ Test: "It will check if a particular word starts with a vowel irrespective of capitalization"
+ Code: wordsStartingWithAVowel("Emmanuel");
+ Expected Output: true
+
+ <!--  
+ THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST  -->
