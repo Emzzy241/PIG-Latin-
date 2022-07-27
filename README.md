@@ -130,10 +130,30 @@ CODE:
     }
 
 
+A TEST HAS BEEN WRITTEN TO PASS THIS SPEC AND IT HAS BEEN PASSED, MOVING ON TO THE NEXT
+
 -->
 
 
+<!-- THE NEXT SPEC: THE THIRD FUNCTION TO CHECK IF FIRST TWO WORDS ARE VOWEL
+    I have already determined if a first word is vowel and it has been used in my algorithm in scripts.js
+    what if I want to determine if the first 2 letters in a word are vowels... I HAVE TO CREATE A NEW FUNCTION AND TEST FOR IT... I first created in my vowel array's variable, then I stored the splitted form of my word as an array also and then I used forLoop,  and lastly a conditional
 
+        function firstTwoWordsStartingWithAVowel(thisWord){
+            let vowels = ["a", "e", "i", "o", "u"];
+            let thisWordArray = thisWord.split("");
+            for (let i = 0; i < thisWordArray.length; i++){
+                if(vowels(thisWordArray[i])){
+                    return true;
+                }
+            } return false;
+        } return thisWordArray.length;
+        }
+
+
+
+
+ -->
 
 
 
@@ -229,3 +249,12 @@ Expected Output: true;
 <!-- 
 
  THIS TEST HAS BEEN PASSED, MOVING ON TO THE NEXT TEST -->
+
+ <!-- 
+  FOURTH TEST: CHECKING IF A PARTICULAR WORD STARTS WITH A VOWEL -->
+
+ Describe: firstTwoWordsStartingWithAVowel()
+
+ Test: "It will check if a particular word starts with two vowel letters"
+ Code: wordsStartingWithAVowel("aavid");
+ Expected Output: true
