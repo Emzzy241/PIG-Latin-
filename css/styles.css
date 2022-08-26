@@ -7,3 +7,27 @@
 body{
     background-color: lightblue;
 }
+
+
+.footer-bottom {
+    background-color: rgb(82, 121, 134);
+    text-align: center;
+    color: white;
+    height: 70px;
+    margin-top: 125px;
+}
+
+
+
+.footer-bottom a{
+    color: white;
+}
+
+.copyright-link {
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.copyright-link:is(:hover, :focus) {
+    text-decoration: none;
+}

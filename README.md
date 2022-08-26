@@ -1,3 +1,71 @@
+
+
+# PIG LATIN
+
+#### made by Mojiboye Emmanuel
+
+### Do you want to see your sentence get encrypted and then retrned back to you? Try the PIG Latin App by Mojiboye 
+
+### Technologies Used
+* Git
+* Javascript
+* Html
+* CSS
+* Bootstrap
+
+# Description
+
+_In this website you are required to enter in a sentence, that sentence gets turned into a new and entirely different language.... Welcome to the Pig Universe where we speak not oink's but ay's_
+
+## Setup/Installation
+* _Open the directory._
+* _Click on the index.html file._
+_Note: the website is designed to run on a web browser just be sure you have one. _
+* _That's all the installation process you need to carry out. Have fun while communicating with the browser. If you like the website just be sure to give tge project a thumbs up_
+
+## Known Bugs
+_As at the launching of this Project there are zero bugs in it. But if you do find a bug in it, be sure to notify me via my various social media handles below_
+
+## WEBSITE LINK
+https://github.com/Emzzy241/FORM-LETTER
+
+## License 
+Licensed under the GNU General Public License 
+© 2022 _by Mojiboye Emmanuel_ All Rights Reserved.
+
+## Contact
+_Connect with me @Emmanuel.9944 on instagram and on all other social media pages all @Emmanuel Oluwole_
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- Wrting out each specs from little to large
 NOTE: THIS SPEC WILL WORK BUT IT WASN'T SEPARATING MY 2 LOGIC SO I HAD TO START IT AGAIN. IF I WAS TO SEPARATE LOGIC 
 IN THIS I WOULD BE NEEDING A "return true" keyword BUT return; and break; BOTH DON'T WORK IN forEach LOOPS SO 
