@@ -1,5 +1,3 @@
-
-
 # PIG LATIN
 
 #### made by Mojiboye Emmanuel
